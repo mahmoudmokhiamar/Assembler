@@ -1,2 +1,2 @@
-for key,val in out.items():
-    print(key,val)
+ binaries:
+        bin_text += lc + ' ' + binaries[lc] + '\n'

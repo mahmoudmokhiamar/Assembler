@@ -1,7 +1,7 @@
 from assembler import Assembler
 
 INPUT_FILE = 'testcode.asm'
-OUT_FILE = 'testcode.mc'
+OUT_FILE = 'out.txt'
 MRI_FILE = 'mri.txt'
 RRI_FILE = 'rri.txt'
 IOI_FILE = 'ioi.txt'
@@ -15,6 +15,6 @@ if __name__ == "__main__":
     print('Assembling...')
     binaries = asm.assemble()
     for lc in binaries:
-        bin_text += lc + '\t' + binaries[lc] + '\n'
+        bin_text += lc + ' ' + binaries[lc] + '\n'
     with open(OUT_FILE, 'r') as f:
         print('TEST PASSED' if f.read() == bin_text else 'TEST FAILED')
