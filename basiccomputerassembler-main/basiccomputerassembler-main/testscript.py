@@ -14,7 +14,7 @@ if __name__ == "__main__":
                     ioipath=IOI_FILE)
     print('Assembling...')
     binaries = asm.assemble()
-    for lc in binaries:
+    for lc in binaries:   
         bin_text += lc + ' ' + binaries[lc] + '\n'
     with open(OUT_FILE, 'r') as f:
         print('TEST PASSED' if f.read() == bin_text else 'TEST FAILED')
