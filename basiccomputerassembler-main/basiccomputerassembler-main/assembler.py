@@ -85,7 +85,7 @@ class Assembler(object):
         # code inside self.__bin. So the final step is to return
         # self.__bin
         return self.__bin
-
+        
 
     # PRIVATE METHODS
     def __load_table(self, path) -> dict:
@@ -207,3 +207,4 @@ outF = open("Myout.txt", "w")
 for key,val in out.items():
     outF.write(key+" "+val)
     outF.write('\n')
+    outF.write('sucess')
