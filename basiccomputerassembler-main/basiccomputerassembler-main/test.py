@@ -23,4 +23,4 @@ for lc in binaries:
 
 outF = open('out.txt','r')
 print(outF.read())
-print('removed modification')
+print('testforgroup')
